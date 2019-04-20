@@ -1,0 +1,38 @@
+%btn {
+  border: none;
+  padding: 15px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.extend {
+  &__section {
+    padding: 15px;
+
+    [class^="btn"] {
+      @extend %btn;
+
+      &[class$="--big"] {
+        background: $primary;
+        display: block;
+        width: 100%;
+        margin: 15px 0px;
+      }
+
+      &[class$="--small"] {
+        padding: 5px 10px;
+        background: $accent;
+      }
+
+      &[class$="--circle"] {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background: $secondary;
+        color: #F3F3F3;
+      }
+    }
+  }
+}

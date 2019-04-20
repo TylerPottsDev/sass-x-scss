@@ -1,0 +1,28 @@
+.nesting {
+  &__header {
+    background: #171717;
+
+    &__title {
+      color: #F3F3F3;
+    }
+  }
+
+  &__article {
+    padding: 15px;
+
+    &__title {
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    &__content {
+      color: #53565a;
+      margin: 15px 0px;
+    }
+
+    &__footer {
+      color: #AAA;
+    }
+  }
+}

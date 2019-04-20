@@ -1,0 +1,16 @@
+@mixin gradientText($direction: left, $color1: $primary, $color2: $secondary) {
+  background: -webkit-linear-gradient($direction, $color1, $color2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin fancyText ($outline: false, $shadow: false) {
+  @if $outline == true {
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: $secondary;
+    color: transparent;
+  }
+  @if $shadow == true {
+    text-shadow: 2px 2px 3px $secondary;
+  }
+}

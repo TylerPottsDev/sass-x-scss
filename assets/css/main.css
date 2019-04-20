@@ -1,0 +1,132 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #F3F3F3;
+  font-family: "Saira", "Helvetica", sans-serif;
+}
+
+section {
+  margin: 15px 0px;
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+  background: #AF1E2D;
+}
+.header__title {
+  color: #171717;
+  font-size: 28px;
+  font-weight: 700;
+}
+.header__title span {
+  font-weight: 300;
+}
+
+.nesting__header {
+  background: #171717;
+}
+.nesting__header__title {
+  color: #F3F3F3;
+}
+.nesting__article {
+  padding: 15px;
+}
+.nesting__article__title {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.nesting__article__content {
+  color: #53565a;
+  margin: 15px 0px;
+}
+.nesting__article__footer {
+  color: #AAA;
+}
+
+.variables__group {
+  margin: 15px 0px;
+}
+.variables__group__title {
+  font-size: 32px;
+  background: -webkit-linear-gradient(left, #AF1E2D, #171717);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.variables__group__subtitle {
+  font-size: 26px;
+}
+.variables__group__header {
+  font-size: 20px;
+}
+.variables__group [class^=btn] {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 15px;
+  border-radius: 4px;
+}
+.variables__group [class^=btn][class$="--primary"] {
+  background: #AF1E2D;
+}
+.variables__group [class^=btn][class$="--secondary"] {
+  background: #171717;
+  color: #AF1E2D;
+}
+.variables__group [class^=btn][class$="--accent"] {
+  background: #00AF85;
+  color: #171717;
+}
+
+.mixins__header {
+  padding: 15px;
+  background: #00AF85;
+}
+.mixins__header__title {
+  font-size: 32px;
+  font-weight: 700;
+  background: -webkit-linear-gradient(right, #AF1E2D, #AF1E2D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mixins__section {
+  padding: 15px;
+}
+.mixins__section__content {
+  text-shadow: 2px 2px 3px #171717;
+  font-size: 32px;
+}
+
+.extend__section [class^=btn] {
+  border: none;
+  padding: 15px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.extend__section {
+  padding: 15px;
+}
+.extend__section [class^=btn][class$="--big"] {
+  background: #AF1E2D;
+  display: block;
+  width: 100%;
+  margin: 15px 0px;
+}
+.extend__section [class^=btn][class$="--small"] {
+  padding: 5px 10px;
+  background: #00AF85;
+}
+.extend__section [class^=btn][class$="--circle"] {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #171717;
+  color: #F3F3F3;
+}

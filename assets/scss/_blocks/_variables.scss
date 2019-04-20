@@ -1,0 +1,39 @@
+.variables {
+  &__group {
+    margin: 15px 0px;
+    &__title {
+      font-size: $title_size;
+      @include gradientText;
+    }
+
+    &__subtitle {
+      font-size: $sub_size;
+    }
+
+    &__header {
+      font-size: $header_size;
+    }
+
+    [class^="btn"] {
+      border: none;
+      outline: none;
+      margin: 0;
+      padding: 15px;
+      border-radius: 4px;
+
+      &[class$="--primary"] {
+        background: $primary;
+      }
+
+      &[class$="--secondary"] {
+        background: $secondary;
+        color: $primary;
+      }
+
+      &[class$="--accent"] {
+        background: $accent;
+        color: $secondary;
+      }
+    }
+  }
+}

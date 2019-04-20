@@ -1,0 +1,25 @@
+.mixins {
+  &__header {
+    padding: 15px;
+    background: $accent;
+
+    &__title {
+      font-size: $title_size;
+      font-weight: 700;
+      @include gradientText($color2: #AF1E2D, $direction: right);
+    }
+  }
+
+  &__section {
+    padding: 15px;
+    &__content {
+      @include fancyText(false, true);
+      @if $large_type == true {
+        font-size: 32px;
+      } 
+      @else {
+        font-size: 20px;
+      }
+    }
+  }
+}
